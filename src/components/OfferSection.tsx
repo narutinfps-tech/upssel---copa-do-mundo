@@ -23,6 +23,39 @@ export default function OfferSection({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
+  React.useEffect(() => {
+    let attempts = 0;
+    const maxAttempts = 20;
+
+    const findAndInit = () => {
+      const globalWindow = window as any;
+      if (typeof globalWindow.initWiapyUpsell === 'function') {
+        try {
+          globalWindow.initWiapyUpsell({
+            linkUrl: "https://pay.wiapy.com/checkout/6a1e2e9f1e852dffa3a9eb95",
+            linkText: "SIM, EU ACEITO ESSA OFERTA",
+            styles: {
+              backgroundColor: "#00d769",
+              hoverBackgroundColor: "#00b85a",
+              fontSize: "17px",
+              borderRadius: "10px"
+            },
+            refusalLinkUrl: "https://wiapy.com/login",
+            refusalLinkText: "Recusar está oferta",
+            refusalLinkColor: "#000000"
+          });
+        } catch (error) {
+          console.error("Error running initWiapyUpsell:", error);
+        }
+      } else if (attempts < maxAttempts) {
+        attempts++;
+        setTimeout(findAndInit, 200);
+      }
+    };
+
+    findAndInit();
+  }, []);
+
   const handleSimulatedCheckout = (e: React.FormEvent) => {
     e.preventDefault();
     if (!buyerName || !buyerEmail) return;
@@ -150,21 +183,20 @@ export default function OfferSection({
               </div>
             </div>
 
-            {/* CTA action or success display */}
-            <div className="space-y-4">
-              <a
-                href="https://pay.wiapy.com/9rccEpBlqd"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm tracking-wide uppercase rounded-xl shadow-lg transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0 text-center block no-underline flex items-center justify-center gap-2 cursor-pointer"
-              >
-                <Sparkles className="w-4 h-4 text-emerald-300 fill-emerald-300" />
-                ADICIONAR AO MEU PEDIDO AGORA
-              </a>
-
-              <span className="text-[11px] text-slate-400 block font-medium">
-                Compra processada com segurança. Acesso imediato.
-              </span>
+            {/* Custom Wiapy Upsell Container script integration target */}
+            <div className="space-y-4 py-2">
+              <div id="wiapy_upsell" className="w-full min-h-[60px] flex justify-center items-center">
+                <noscript>
+                  <div className="text-center w-full">
+                    <a 
+                      href="https://pay.wiapy.com/checkout/6a1e2e9f1e852dffa3a9eb95"
+                      className="inline-block w-full py-3.5 bg-[#00d769] hover:bg-[#00b85a] text-white font-extrabold text-[17px] rounded-[10px] shadow-sm transition-all text-center no-underline uppercase tracking-wide cursor-pointer"
+                    >
+                      SIM, EU ACEITO ESSA OFERTA
+                    </a>
+                  </div>
+                </noscript>
+              </div>
             </div>
 
             {/* Mini Trust Badges */}

@@ -15,7 +15,6 @@ import WhatYouReceive from './components/WhatYouReceive';
 import Benefits from './components/Benefits';
 import Audience from './components/Audience';
 import OfferSection from './components/OfferSection';
-import WiapyUpsell from './components/WiapyUpsell';
 import Comparison from './components/Comparison';
 import LastCall from './components/LastCall';
 
@@ -93,9 +92,6 @@ export default function App() {
         orderAdded={orderAdded}
         offerSectionRef={offerSectionRef}
       />
-
-      {/* Wiapy Upsell Checkout Integration exactly below the OfferSection */}
-      <WiapyUpsell />
 
       {/* 10. Section 9: Last action trigger */}
       <LastCall 
