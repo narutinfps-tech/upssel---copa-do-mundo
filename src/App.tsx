@@ -42,7 +42,7 @@ export default function App() {
   // Image Asset paths generated via the image generation tool
   const heroImage = '/src/assets/images/combo_pack_mockup_1780358738170.png';
   const worldCupImage = 'https://i.ibb.co/DgsfWbyZ/Chat-GPT-Image-1-de-jun-de-2026-22-10-02.png';
-  const saoJoaoImage = '/src/assets/images/sao_joao_sheets_1780358764594.png';
+  const saoJoaoImage = 'https://i.ibb.co/VWjKYddr/42ac627f-65fb-4b29-8e58-c952db70db1c.png';
 
   return (
     <div className="min-h-screen bg-brand-beige flex flex-col justify-between selection:bg-brand-yellow selection:text-brand-blue font-sans">
