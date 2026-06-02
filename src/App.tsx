@@ -11,7 +11,6 @@ import HeaderBanner from './components/HeaderBanner';
 import HeroSection from './components/HeroSection';
 import WorldCupCarousel from './components/WorldCupCarousel';
 import WhatYouReceive from './components/WhatYouReceive';
-import VisualGallery from './components/VisualGallery';
 import Benefits from './components/Benefits';
 import Audience from './components/Audience';
 import OfferSection from './components/OfferSection';
@@ -71,12 +70,6 @@ export default function App() {
         worldCupImage={worldCupImage} 
         saoJoaoImage={saoJoaoImage}
         onScrollToOffer={scrollToOffer}
-      />
-
-      {/* 4. Section 3: Visual Grid and Previews */}
-      <VisualGallery 
-        onAddToOrder={handleAddToOrder} 
-        orderAdded={orderAdded} 
       />
 
       {/* 5. Section 4: Benefits Grid */}
