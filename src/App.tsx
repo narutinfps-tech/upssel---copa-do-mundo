@@ -22,7 +22,7 @@ export default function App() {
   // Shared pricing and offer states
   const [pricing, setPricing] = useState<PricingState>({
     originalPrice: 67.00,
-    promoPrice: 24.90,
+    promoPrice: 37.00,
     currency: 'R$'
   });
   

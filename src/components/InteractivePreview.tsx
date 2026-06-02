@@ -507,11 +507,11 @@ export default function InteractivePreview({
             <div className="bg-white/10 p-4 rounded-xl border border-white/15 text-center">
               <span className="text-[10px] text-slate-300 block uppercase font-bold">Preço de oportunidade única</span>
               <div className="flex items-baseline justify-center gap-2 mt-1">
-                <span className="text-xs text-slate-300 line-through">R$ 57,00</span>
-                <span className="text-xl font-extrabold text-brand-yellow">R$ 19,90</span>
+                <span className="text-xs text-slate-300 line-through">R$ 67,00</span>
+                <span className="text-xl font-extrabold text-brand-yellow">R$ 37,00</span>
               </div>
               <span className="text-[10px] text-brand-green bg-white rounded px-2 py-0.5 font-bold inline-block mt-2">
-                Economize 65% Hoje
+                Aproveite o Desconto
               </span>
             </div>
 
