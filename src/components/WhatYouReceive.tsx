@@ -51,15 +51,15 @@ export default function WhatYouReceive({ worldCupImage, saoJoaoImage, onScrollTo
             </div>
 
             {/* Inner Content */}
-            <div className="p-6 md:p-8 space-y-6 flex-1 flex flex-col justify-between">
+            <div className="p-6 md:p-8 space-y-6 flex-1 flex flex-col justify-between text-center sm:text-left">
               
-              <div className="space-y-4">
-                <p className="text-sm text-slate-800 leading-relaxed font-medium">
+              <div className="space-y-4 flex flex-col items-center sm:items-start">
+                <p className="text-sm text-slate-800 leading-relaxed font-semibold">
                   Materiais didáticos enriquecidos com vocabulário de futebol internacional, jogos lúdicos, textos de leitura, cruzadinhas temáticas, exercícios de caça-palavras de esporte, atividades lúdicas de colorir com códigos, escrita estimulante e exercícios com foco nas regras e curiosidades da competição mundial.
                 </p>
 
                 {/* Sub Bulletpoints */}
-                <ul className="space-y-2 text-xs text-slate-700">
+                <ul className="space-y-2 text-xs text-slate-700 text-left w-full">
                   {[
                     'Dicionário ilustrado de futebol (Ball, Goal, Trophy, Referee, Whistle)',
                     'Cruzadinhas divertidas e caça-palavras para fixação',
@@ -113,15 +113,15 @@ export default function WhatYouReceive({ worldCupImage, saoJoaoImage, onScrollTo
             </div>
 
             {/* Inner Content */}
-            <div className="p-6 md:p-8 space-y-6 flex-1 flex flex-col justify-between">
+            <div className="p-6 md:p-8 space-y-6 flex-1 flex flex-col justify-between text-center sm:text-left">
               
-              <div className="space-y-4">
-                <p className="text-sm text-slate-800 leading-relaxed font-medium">
+              <div className="space-y-4 flex flex-col items-center sm:items-start">
+                <p className="text-sm text-slate-800 leading-relaxed font-semibold">
                   Atividades lúdicas altamente criativas com vocabulário típico de Festa Junina adaptado para inglês, comidas típicas (popcorn, sweet corn), fogueira tradicional, bandeirinhas coloridas, música folclórica infantil, história das tradições, jogos cognitivos rápidos e ilustrações prontas para colorir e recortar.
                 </p>
 
                 {/* Sub Bulletpoints */}
-                <ul className="space-y-2 text-xs text-slate-700">
+                <ul className="space-y-2 text-xs text-slate-700 text-left w-full">
                   {[
                     'Vocabulário do Arraiá traduzido e ilustrado para fixação visual',
                     'Atividades de "Cut and Paste" para desenvolvimento motor e pareamento',

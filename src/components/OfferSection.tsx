@@ -36,7 +36,7 @@ export default function OfferSection({
   };
 
   return (
-    <div ref={offerSectionRef} className="bg-brand-beige/50 py-16 px-6 border-b-4 border-brand-blue relative scroll-mt-6">
+    <div ref={offerSectionRef} id="offer-section" className="bg-brand-beige/50 py-16 px-6 border-b-4 border-brand-blue relative scroll-mt-6">
       
       {/* Decorative school supplies banners */}
       <div className="absolute top-0 right-10 leading-none text-brand-red opacity-10 select-none hidden lg:block text-8xl">
@@ -65,8 +65,8 @@ export default function OfferSection({
         <div className="grid grid-cols-1 md:grid-cols-12 rounded-3xl border-4 border-brand-blue bg-white overflow-hidden shadow-xl">
           
           {/* Detailed Info Column */}
-          <div className="md:col-span-7 p-6 md:p-10 space-y-6 flex flex-col justify-between">
-            <div className="space-y-4">
+          <div className="md:col-span-7 p-6 md:p-10 space-y-6 flex flex-col justify-between text-center md:text-left items-center md:items-start">
+            <div className="space-y-4 flex flex-col items-center md:items-start w-full">
               <span className="text-xs font-bold uppercase tracking-wider text-brand-red">
                 O que está incluso nesta oportunidade?
               </span>
@@ -74,10 +74,10 @@ export default function OfferSection({
                 Você recebe dois temas completos: <span className="text-brand-blue underline">Copa do Mundo + São João</span>. Tudo em um único combo, com atividades visuais, coloridas e prontas para imprimir.
               </p>
 
-              <hr className="border-t border-slate-150" />
+              <hr className="border-t border-slate-150 w-full" />
 
               {/* Bulletpoints */}
-              <ul className="space-y-3 text-xs sm:text-sm">
+              <ul className="space-y-3 text-xs sm:text-sm text-left w-full">
                 <li className="flex gap-2.5 items-start">
                   <div className="p-0.5 bg-brand-green/20 text-brand-green rounded-full shrink-0">
                     <Check className="w-4 h-4 text-brand-green font-bold" />
@@ -148,20 +148,15 @@ export default function OfferSection({
 
             {/* CTA action or success display */}
             <div className="space-y-3">
-              {!orderAdded ? (
-                <button
-                  onClick={() => setShowCheckout(true)}
-                  className="w-full py-4 bg-brand-green hover:bg-brand-green/95 text-white font-black text-sm uppercase rounded-2xl shadow-lg transition-transform duration-200 transform hover:-translate-y-0.5 active:translate-y-0 tracking-wider cursor-pointer flex items-center justify-center gap-1.5"
-                >
-                  <Sparkles className="w-4 h-4 text-brand-yellow fill-brand-yellow animate-spin" />
-                  SIM, QUERO ADICIONAR ESSE PACK
-                </button>
-              ) : (
-                <div className="w-full p-4 bg-neutral-800 text-brand-yellow font-extrabold text-xs sm:text-sm rounded-2xl flex flex-col items-center gap-1">
-                  <span>✓ PACK ADICIONADO AO SEU FLUXO!</span>
-                  <span className="text-[10px] text-slate-400 font-normal">Sua compra foi liberada! Baixe no final da página.</span>
-                </div>
-              )}
+              <a
+                href="https://pay.wiapy.com/9rccEpBlqd"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full py-4 bg-brand-green hover:bg-brand-green/95 text-white font-black text-sm uppercase rounded-2xl shadow-lg transition-transform duration-200 transform hover:-translate-y-0.5 active:translate-y-0 tracking-wider cursor-pointer flex items-center justify-center gap-1.5 text-center block no-underline"
+              >
+                <Sparkles className="w-4 h-4 text-brand-yellow fill-brand-yellow animate-bounce" />
+                SIM, QUERO ADICIONAR ESSE PACK
+              </a>
 
               <span className="text-[11px] text-slate-500 block font-semibold">
                 Acesso imediato após a compra.

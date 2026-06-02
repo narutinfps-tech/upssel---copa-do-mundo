@@ -33,14 +33,14 @@ export default function Audience() {
           {targets.map((target, idx) => (
             <div 
               key={idx}
-              className="bg-brand-beige/25 p-5 rounded-xl border-2 border-dashed border-slate-200 hover:border-brand-blue hover:bg-white transition-all space-y-2 flex gap-4"
+              className="bg-brand-beige/25 p-5 rounded-xl border-2 border-dashed border-slate-200 hover:border-brand-blue hover:bg-white transition-all space-y-3 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4"
             >
-              <div className="w-10 h-10 rounded-lg bg-brand-blue text-white flex items-center justify-center shrink-0">
+              <div className="w-10 h-10 rounded-lg bg-brand-blue text-white flex items-center justify-center shrink-0 shadow-sm">
                 <UserCheck className="w-5 h-5" />
               </div>
               <div className="space-y-1">
                 <h3 className="text-sm sm:text-base font-extrabold text-brand-blue">{target.title}</h3>
-                <p className="text-xs text-slate-600 leading-relaxed font-medium">{target.desc}</p>
+                <p className="text-xs text-slate-600 leading-relaxed font-semibold">{target.desc}</p>
               </div>
             </div>
           ))}

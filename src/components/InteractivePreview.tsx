@@ -518,21 +518,14 @@ export default function InteractivePreview({
           </div>
 
           <div className="mt-8 pt-6 border-t border-white/20 space-y-3">
-            {!hasAdded ? (
-              <button
-                onClick={() => {
-                  onAddToOrder();
-                  onClose();
-                }}
-                className="w-full py-3 bg-brand-green hover:bg-brand-green/95 text-white text-xs font-bold rounded-xl shadow-lg hover:shadow-xl transition-all uppercase tracking-wider transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
-              >
-                Adicionar ao meu Pedido
-              </button>
-            ) : (
-              <div className="p-3 bg-brand-green text-white text-xs text-center font-bold rounded-xl animate-bounce">
-                ✓ Adicionado ao seu Pedido!
-              </div>
-            )}
+            <a
+              href="https://pay.wiapy.com/9rccEpBlqd"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-3 bg-brand-green hover:bg-brand-green/95 text-white text-xs font-bold rounded-xl shadow-lg hover:shadow-xl transition-all uppercase tracking-wider transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer text-center block no-underline"
+            >
+              Adicionar ao meu Pedido
+            </a>
 
             <button
               onClick={onClose}

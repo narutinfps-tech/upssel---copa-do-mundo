@@ -40,11 +40,11 @@ export default function Comparison() {
           
           {/* Left block - Alone */}
           <div className="bg-slate-50 border-3 border-slate-300 rounded-3xl p-6 md:p-8 space-y-6 opacity-85 hover:opacity-100 transition-opacity">
-            <div className="flex items-center gap-3 border-b-2 border-slate-200 pb-4">
-              <div className="w-10 h-10 rounded-xl bg-slate-200 text-slate-600 flex items-center justify-center font-bold">
+            <div className="flex flex-col sm:flex-row items-center gap-3 border-b-2 border-slate-200 pb-4 text-center sm:text-left">
+              <div className="w-10 h-10 rounded-xl bg-slate-200 text-slate-600 flex items-center justify-center font-bold shrink-0">
                 ✕
               </div>
-              <div>
+              <div className="flex flex-col items-center sm:items-start">
                 <span className="text-[10px] text-slate-500 uppercase font-black">Processo Desgastante</span>
                 <h3 className="text-base sm:text-lg font-black text-slate-700">Criando sozinho</h3>
               </div>
@@ -53,7 +53,7 @@ export default function Comparison() {
             {/* List */}
             <ul className="space-y-4">
               {aloneItems.map((item, idx) => (
-                <li key={idx} className="flex gap-2.5 items-start">
+                <li key={idx} className="flex gap-2.5 items-start text-left">
                   <div className="p-0.5 bg-slate-200 text-slate-500 rounded-full shrink-0 mt-0.5">
                     <X className="w-3.5 h-3.5 text-slate-605" />
                   </div>
@@ -79,11 +79,11 @@ export default function Comparison() {
               Melhor Opção!
             </div>
 
-            <div className="flex items-center gap-3 border-b-2 border-brand-yellow/30 pb-4">
-              <div className="w-10 h-10 rounded-xl bg-brand-blue text-white flex items-center justify-center font-bold">
+            <div className="flex flex-col sm:flex-row items-center gap-3 border-b-2 border-brand-yellow/30 pb-4 text-center sm:text-left">
+              <div className="w-10 h-10 rounded-xl bg-brand-blue text-white flex items-center justify-center font-bold shrink-0">
                 ✓
               </div>
-              <div>
+              <div className="flex flex-col items-center sm:items-start">
                 <span className="text-[10px] text-brand-blue uppercase font-black">Praticidade Máxima</span>
                 <h3 className="text-base sm:text-lg font-black text-brand-blue">Com o pack pronto</h3>
               </div>
@@ -92,7 +92,7 @@ export default function Comparison() {
             {/* List */}
             <ul className="space-y-4">
               {packItems.map((item, idx) => (
-                <li key={idx} className="flex gap-2.5 items-start">
+                <li key={idx} className="flex gap-2.5 items-start text-left">
                   <div className="p-0.5 bg-brand-green/20 text-brand-green rounded-full shrink-0 mt-0.5">
                     <Check className="w-3.5 h-3.5 text-brand-green font-extrabold" />
                   </div>

@@ -65,64 +65,14 @@ export default function LastCall({
 
         {/* Buttons and CTAs */}
         <div className="pt-4 max-w-md mx-auto space-y-4">
-          {!orderAdded ? (
-            <button
-              onClick={onScrollToOffer}
-              className="w-full py-4 bg-brand-green hover:bg-brand-green/95 text-white font-black text-sm sm:text-base uppercase rounded-2xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-0.5 active:translate-y-0 tracking-widest cursor-pointer"
-            >
-              ADICIONAR AO MEU PEDIDO AGORA
-            </button>
-          ) : (
-            <div className="bg-white/10 p-4 border border-white/20 rounded-2xl space-y-2 animate-down">
-              <span className="text-[10px] bg-brand-green text-white py-0.5 px-2.5 rounded-full font-bold uppercase inline-block">
-                ★ Pedido Adicionado Com Sucesso!
-              </span>
-              <h4 className="text-xs sm:text-sm font-extrabold text-brand-yellow">
-                Sua Central de Downloads do Professor está Ativa:
-              </h4>
-
-              {/* Download Buttons Simulators */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-3">
-                
-                {/* Download Copa */}
-                <button
-                  onClick={startCopaDownload}
-                  disabled={downloadingCopa}
-                  className={`p-3 rounded-xl border border-white/10 text-left transition-all ${
-                    downloadedCopa 
-                      ? 'bg-brand-green/20 border-brand-green text-white' 
-                      : 'bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white cursor-pointer'
-                  }`}
-                >
-                  <p className="text-[10px] uppercase font-semibold text-slate-400">Apostila PDF #A4</p>
-                  <div className="flex justify-between items-center mt-1">
-                    <span className="text-[11px] font-bold">1. Copa do Mundo (8 Ativs)</span>
-                    <Download className={`w-4 h-4 ${downloadingCopa ? 'animate-bounce' : ''}`} />
-                  </div>
-                  {downloadedCopa && <p className="text-[9px] text-brand-yellow block mt-1">✓ Baixado! pdf_copa_ingles.pdf</p>}
-                </button>
-
-                {/* Download São João */}
-                <button
-                  onClick={startSaoJoaoDownload}
-                  disabled={downloadingSaoJoao}
-                  className={`p-3 rounded-xl border border-white/10 text-left transition-all ${
-                    downloadedSaoJoao 
-                      ? 'bg-brand-green/20 border-brand-green text-white' 
-                      : 'bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white cursor-pointer'
-                  }`}
-                >
-                  <p className="text-[10px] uppercase font-semibold text-slate-400">Apostila PDF #A4</p>
-                  <div className="flex justify-between items-center mt-1">
-                    <span className="text-[11px] font-bold">2. São João (10 Ativs)</span>
-                    <Download className={`w-4 h-4 ${downloadingSaoJoao ? 'animate-bounce' : ''}`} />
-                  </div>
-                  {downloadedSaoJoao && <p className="text-[9px] text-brand-yellow block mt-1">✓ Baixado! pdf_saojoao_ingles.pdf</p>}
-                </button>
-
-              </div>
-            </div>
-          )}
+          <a
+            href="https://pay.wiapy.com/9rccEpBlqd"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full py-4 bg-brand-green hover:bg-brand-green/95 text-white font-black text-sm sm:text-base uppercase rounded-2xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-0.5 active:translate-y-0 tracking-widest cursor-pointer block text-center no-underline"
+          >
+            ADICIONAR AO MEU PEDIDO AGORA
+          </a>
 
           {/* Secure purchase footer text */}
           <div className="flex items-center justify-center gap-4 text-xs text-slate-300 font-bold pt-2">

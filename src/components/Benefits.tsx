@@ -63,7 +63,7 @@ export default function Benefits() {
           {benefitItems.slice(0, 3).map((item) => (
             <div 
               key={item.id}
-              className="bg-white p-6 rounded-2xl border-2 border-brand-blue/15 hover:border-brand-blue hover:shadow-lg transition-all space-y-4 relative group"
+              className="bg-white p-6 rounded-2xl border-2 border-brand-blue/15 hover:border-brand-blue hover:shadow-lg transition-all space-y-4 relative group flex flex-col items-center text-center sm:items-start sm:text-left"
             >
               {/* Floating index */}
               <span className="absolute top-4 right-4 text-3xl font-extrabold text-slate-200/50 group-hover:text-brand-yellow/50 transition-colors">
@@ -77,7 +77,7 @@ export default function Benefits() {
                 <h3 className="text-base font-extrabold text-brand-blue">
                   {item.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-semibold">
                   {item.description}
                 </p>
               </div>
@@ -88,7 +88,7 @@ export default function Benefits() {
           {benefitItems.slice(3, 5).map((item) => (
             <div 
               key={item.id}
-              className="bg-white p-6 rounded-2xl border-2 border-brand-blue/15 hover:border-brand-blue hover:shadow-lg transition-all space-y-4 relative group md:col-span-1 lg:col-span-1"
+              className="bg-white p-6 rounded-2xl border-2 border-brand-blue/15 hover:border-brand-blue hover:shadow-lg transition-all space-y-4 relative group md:col-span-1 lg:col-span-1 flex flex-col items-center text-center sm:items-start sm:text-left"
             >
               {/* Floating index */}
               <span className="absolute top-4 right-4 text-3xl font-extrabold text-slate-200/50 group-hover:text-brand-yellow/50 transition-colors">
@@ -102,7 +102,7 @@ export default function Benefits() {
                 <h3 className="text-base font-extrabold text-brand-blue">
                   {item.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-semibold">
                   {item.description}
                 </p>
               </div>
@@ -110,15 +110,15 @@ export default function Benefits() {
           ))}
 
           {/* Prompting Extra Callout Card in the empty spot of 3x2 grid */}
-          <div className="bg-brand-blue text-white p-6 rounded-2xl border-3 border-brand-blue shadow-md flex flex-col justify-between md:col-span-2 lg:col-span-1">
-            <div className="space-y-2">
+          <div className="bg-brand-blue text-white p-6 rounded-2xl border-3 border-brand-blue shadow-md flex flex-col justify-between items-center text-center lg:items-start lg:text-left md:col-span-2 lg:col-span-1">
+            <div className="space-y-2 flex flex-col items-center lg:items-start">
               <span className="text-[10px] font-bold text-brand-yellow uppercase tracking-wider bg-white/10 px-2 py-0.5 rounded">Garantia</span>
               <h3 className="text-base font-bold text-brand-yellow">Satisfação Garantida</h3>
               <p className="text-xs text-slate-200 leading-relaxed">
                 Adicione o pack com total segurança. Nosso material é altamente elogiado por mais de 1.400 professores do Brasil inteiro!
               </p>
             </div>
-            <div className="pt-4 border-t border-white/10 mt-4 text-[11px] text-slate-300 font-bold">
+            <div className="pt-4 border-t border-white/10 mt-4 text-[11px] text-slate-300 font-bold w-full">
               ★ 4.9/5 estrelas de avaliação dos professores.
             </div>
           </div>

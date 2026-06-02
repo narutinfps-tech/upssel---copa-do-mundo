@@ -9,10 +9,10 @@ import { PricingState } from './types';
 // Components
 import HeaderBanner from './components/HeaderBanner';
 import HeroSection from './components/HeroSection';
+import WorldCupCarousel from './components/WorldCupCarousel';
 import WhatYouReceive from './components/WhatYouReceive';
 import VisualGallery from './components/VisualGallery';
 import Benefits from './components/Benefits';
-import MaterialList from './components/MaterialList';
 import Audience from './components/Audience';
 import OfferSection from './components/OfferSection';
 import Comparison from './components/Comparison';
@@ -63,6 +63,9 @@ export default function App() {
         heroImage={heroImage}
       />
 
+      {/* Infinite Carousel of World Cup Activities */}
+      <WorldCupCarousel />
+
       {/* 3. Section 2: What You Will Receive */}
       <WhatYouReceive 
         worldCupImage={worldCupImage} 
@@ -78,9 +81,6 @@ export default function App() {
 
       {/* 5. Section 4: Benefits Grid */}
       <Benefits />
-
-      {/* 6. Section 5: Structural Material lists */}
-      <MaterialList />
 
       {/* 7. Section 6: Target audiences list */}
       <Audience />
