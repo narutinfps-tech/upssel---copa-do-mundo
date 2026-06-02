@@ -75,17 +75,13 @@ export default function WhatYouReceive({ worldCupImage, saoJoaoImage, onScrollTo
               </div>
 
               {/* Visual Represent (Mockup Generated) */}
-              <div className="bg-white border rounded-xl overflow-hidden shadow-inner p-3 relative h-48 flex items-center justify-center mt-6">
-                <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-slate-900/60 to-transparent z-10" />
+              <div className="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm p-2.5 mt-6 flex items-center justify-center">
                 <img
                   src={worldCupImage}
                   alt="Amostra Atividades Copa do Mundo de Inglês"
                   referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-auto object-contain rounded-lg"
                 />
-                <span className="absolute bottom-3 left-3 bg-brand-yellow text-brand-blue text-[10px] font-black px-2 py-0.5 rounded border border-brand-blue z-20">
-                  COMPLETO EM CORES E P&B GABARITADO
-                </span>
               </div>
 
             </div>
@@ -137,17 +133,13 @@ export default function WhatYouReceive({ worldCupImage, saoJoaoImage, onScrollTo
               </div>
 
               {/* Visual Represent (Mockup Generated) */}
-              <div className="bg-white border rounded-xl overflow-hidden shadow-inner p-3 relative h-48 flex items-center justify-center mt-6">
-                <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-slate-900/60 to-transparent z-10" />
+              <div className="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm p-2.5 mt-6 flex items-center justify-center">
                 <img
                   src={saoJoaoImage}
                   alt="Amostra Atividades São João de Inglês"
                   referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-auto object-contain rounded-lg"
                 />
-                <span className="absolute bottom-3 left-3 bg-brand-yellow text-brand-blue text-[10px] font-black px-2 py-0.5 rounded border border-brand-blue z-20">
-                  COBRIMENTO DE DATAS CULTURAIS
-                </span>
               </div>
 
             </div>

@@ -10,10 +10,12 @@ import { PricingState } from './types';
 import HeaderBanner from './components/HeaderBanner';
 import HeroSection from './components/HeroSection';
 import WorldCupCarousel from './components/WorldCupCarousel';
+import SaoJoaoCarousel from './components/SaoJoaoCarousel';
 import WhatYouReceive from './components/WhatYouReceive';
 import Benefits from './components/Benefits';
 import Audience from './components/Audience';
 import OfferSection from './components/OfferSection';
+import WiapyUpsell from './components/WiapyUpsell';
 import Comparison from './components/Comparison';
 import LastCall from './components/LastCall';
 
@@ -40,7 +42,7 @@ export default function App() {
 
   // Image Asset paths generated via the image generation tool
   const heroImage = '/src/assets/images/combo_pack_mockup_1780358738170.png';
-  const worldCupImage = '/src/assets/images/world_cup_sheets_1780358751617.png';
+  const worldCupImage = 'https://i.ibb.co/DgsfWbyZ/Chat-GPT-Image-1-de-jun-de-2026-22-10-02.png';
   const saoJoaoImage = '/src/assets/images/sao_joao_sheets_1780358764594.png';
 
   return (
@@ -65,6 +67,9 @@ export default function App() {
       {/* Infinite Carousel of World Cup Activities */}
       <WorldCupCarousel />
 
+      {/* Infinite Carousel of São João Activities */}
+      <SaoJoaoCarousel />
+
       {/* 3. Section 2: What You Will Receive */}
       <WhatYouReceive 
         worldCupImage={worldCupImage} 
@@ -88,6 +93,9 @@ export default function App() {
         orderAdded={orderAdded}
         offerSectionRef={offerSectionRef}
       />
+
+      {/* Wiapy Upsell Checkout Integration exactly below the OfferSection */}
+      <WiapyUpsell />
 
       {/* 10. Section 9: Last action trigger */}
       <LastCall 

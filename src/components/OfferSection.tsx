@@ -36,137 +36,141 @@ export default function OfferSection({
   };
 
   return (
-    <div ref={offerSectionRef} id="offer-section" className="bg-brand-beige/50 py-16 px-6 border-b-4 border-brand-blue relative scroll-mt-6">
+    <div ref={offerSectionRef} id="offer-section" className="bg-slate-50/70 py-20 px-6 relative scroll-mt-6">
       
-      {/* Decorative school supplies banners */}
-      <div className="absolute top-0 right-10 leading-none text-brand-red opacity-10 select-none hidden lg:block text-8xl">
-        ✎
-      </div>
-      <div className="absolute bottom-5 left-8 leading-none text-brand-blue opacity-10 select-none hidden lg:block text-8xl">
-        🔤
-      </div>
+      {/* Decorative clean background highlights (beautiful web-standard look) */}
+      <div className="absolute top-10 right-1/4 w-96 h-96 bg-blue-50/50 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute bottom-10 left-1/4 w-96 h-96 bg-emerald-50/30 rounded-full blur-3xl pointer-events-none -z-10" />
 
-      <div className="max-w-5xl mx-auto space-y-12">
+      <div className="max-w-4xl mx-auto space-y-12 relative z-10">
         
-        {/* Header Title */}
-        <div className="text-center max-w-3xl mx-auto space-y-3">
-          <span className="text-xs font-black uppercase text-brand-blue bg-brand-yellow px-3.5 py-1 rounded-full border border-brand-blue inline-block">
-            🎁 Upgrade Exclusivo
+        {/* Header Title (Clean & Modern Typography) */}
+        <div className="text-center max-w-2xl mx-auto space-y-4">
+          <span className="text-[11px] font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3 py-1 rounded-full border border-teal-100 inline-block">
+            🎁 Oportunidade Especial
           </span>
-          <h2 className="text-2xl sm:text-3.5xl font-extrabold text-brand-blue tracking-tight leading-tight">
-            Adicione agora ao seu pedido com uma condição especial
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+            Adicione o Combo Didático Completo ao seu pedido
           </h2>
-          <p className="text-xs sm:text-sm text-slate-600 font-semibold max-w-2xl mx-auto">
-            Esse pack foi criado para complementar seus materiais principais e te entregar ainda mais opções de atividades prontas para usar em sala.
+          <p className="text-sm sm:text-base text-slate-600 max-w-xl mx-auto leading-relaxed">
+            Desenvolvido sob medida para poupar suas noites de planejamento e encantar seus alunos com aulas dinâmicas e inesquecíveis.
           </p>
         </div>
 
-        {/* Big Offer Box Card */}
-        <div className="grid grid-cols-1 md:grid-cols-12 rounded-3xl border-4 border-brand-blue bg-white overflow-hidden shadow-xl">
+        {/* Big Offer Box Card (Premium Minimalist Look) */}
+        <div className="grid grid-cols-1 md:grid-cols-12 rounded-2xl border border-slate-150 bg-white overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300">
           
-          {/* Detailed Info Column */}
-          <div className="md:col-span-7 p-6 md:p-10 space-y-6 flex flex-col justify-between text-center md:text-left items-center md:items-start">
-            <div className="space-y-4 flex flex-col items-center md:items-start w-full">
-              <span className="text-xs font-bold uppercase tracking-wider text-brand-red">
-                O que está incluso nesta oportunidade?
-              </span>
-              <p className="text-sm text-slate-800 leading-relaxed font-semibold">
-                Você recebe dois temas completos: <span className="text-brand-blue underline">Copa do Mundo + São João</span>. Tudo em um único combo, com atividades visuais, coloridas e prontas para imprimir.
-              </p>
+          {/* Detailed Info Column (Clean minimalist listing) */}
+          <div className="md:col-span-7 p-8 md:p-11 space-y-8 flex flex-col justify-between">
+            <div className="space-y-6">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-emerald-600">
+                  O que você vai receber hoje:
+                </span>
+                <p className="text-base text-slate-800 leading-relaxed font-medium">
+                  Dois blocos de arquivos digitais 100% completos do <span className="text-brand-blue font-bold">Copa do Mundo + São João em Inglês</span> em formato PDF.
+                </p>
+              </div>
 
-              <hr className="border-t border-slate-150 w-full" />
+              <hr className="border-t border-slate-100" />
 
               {/* Bulletpoints */}
-              <ul className="space-y-3 text-xs sm:text-sm text-left w-full">
-                <li className="flex gap-2.5 items-start">
-                  <div className="p-0.5 bg-brand-green/20 text-brand-green rounded-full shrink-0">
-                    <Check className="w-4 h-4 text-brand-green font-bold" />
+              <ul className="space-y-4 text-sm text-slate-700">
+                <li className="flex gap-3 items-start">
+                  <div className="p-1 bg-emerald-50 text-emerald-600 rounded-full shrink-0">
+                    <Check className="w-4 h-4" />
                   </div>
-                  <span className="text-slate-700">
-                    <strong>18 Tipos de Exercícios</strong> didáticos ilustrados
-                  </span>
+                  <div>
+                    <strong className="text-slate-900 font-bold block">Mais de 50 Exercícios e Atividades</strong>
+                    <span className="text-slate-500 text-xs">Variedade incrível de exercícios ilustrados, jogos, vocabulário e fixação.</span>
+                  </div>
                 </li>
-                <li className="flex gap-2.5 items-start">
-                  <div className="p-0.5 bg-brand-green/20 text-brand-green rounded-full shrink-0">
-                    <Check className="w-4 h-4 text-brand-green font-bold" />
+                <li className="flex gap-3 items-start">
+                  <div className="p-1 bg-emerald-50 text-emerald-600 rounded-full shrink-0">
+                    <Check className="w-4 h-4" />
                   </div>
-                  <span className="text-slate-700">
-                    <strong>Gabarito Completo</strong> incluso para poupar tempo de correção
-                  </span>
+                  <div>
+                    <strong className="text-slate-900 font-bold block">Gabarito Completo Passo a Passo</strong>
+                    <span className="text-slate-500 text-xs">Todas as resoluções inclusas para você poupar preciosas horas de correção.</span>
+                  </div>
                 </li>
-                <li className="flex gap-2.5 items-start">
-                  <div className="p-0.5 bg-brand-green/20 text-brand-green rounded-full shrink-0">
-                    <Check className="w-4 h-4 text-brand-green font-bold" />
+                <li className="flex gap-3 items-start">
+                  <div className="p-1 bg-emerald-50 text-emerald-600 rounded-full shrink-0">
+                    <Check className="w-4 h-4" />
                   </div>
-                  <span className="text-slate-700">
-                    <strong>Versões Coloridas e P&B</strong> ideais para cópias econômicas
-                  </span>
+                  <div>
+                    <strong className="text-slate-900 font-bold block">Versões Coloridas e P&B (Preto e Branco)</strong>
+                    <span className="text-slate-500 text-xs">Otimizadas para economizar tinta na hora de tirar cópias para a turma.</span>
+                  </div>
                 </li>
-                <li className="flex gap-2.5 items-start">
-                  <div className="p-0.5 bg-brand-green/20 text-brand-green rounded-full shrink-0">
-                    <Check className="w-4 h-4 text-brand-green font-bold" />
+                <li className="flex gap-3 items-start">
+                  <div className="p-1 bg-emerald-50 text-emerald-600 rounded-full shrink-0">
+                    <Check className="w-4 h-4" />
                   </div>
-                  <span className="text-slate-700">
-                    <strong>Arquivos em PDF</strong> organizados para download imediato
-                  </span>
+                  <div>
+                    <strong className="text-slate-900 font-bold block">Arquivos em PDF de Alta Definição</strong>
+                    <span className="text-slate-500 text-xs">Organizados por pastas e prontos para download imediato após a compra.</span>
+                  </div>
                 </li>
               </ul>
             </div>
 
-            {/* Satisfaction / Secure indicators */}
-            <div className="pt-6 border-t border-slate-100 flex items-center gap-4 text-xs text-slate-500">
-              <ShieldCheck className="w-8 h-8 text-brand-green shrink-0" />
+            {/* Security Indicator */}
+            <div className="pt-6 border-t border-slate-100 flex items-center gap-4 text-xs text-slate-550">
+              <div className="p-2.5 bg-slate-50 rounded-xl border border-slate-100">
+                <ShieldCheck className="w-6 h-6 text-emerald-600 shrink-0" />
+              </div>
               <div>
-                <p className="font-extrabold text-slate-700">Segurança Total</p>
-                <p>Ambiente seguro com criptografia de ponta e liberação imediata via e-mail.</p>
+                <p className="font-bold text-slate-800">Criptografia e Segurança Ponta a Ponta</p>
+                <p>Liberação imediata no seu e-mail logo após confirmação de compra.</p>
               </div>
             </div>
           </div>
 
-          {/* Pricing Column */}
-          <div className="md:col-span-5 bg-brand-beige/50 p-6 md:p-10 border-t-4 md:border-t-0 md:border-l-4 border-brand-blue flex flex-col justify-between text-center space-y-6">
+          {/* Pricing Column (Elegant, Clean Checkout Card look) */}
+          <div className="md:col-span-5 bg-slate-50 p-8 md:p-11 border-t md:border-t-0 md:border-l border-slate-150 flex flex-col justify-between text-center space-y-8">
             
-            <div className="space-y-4">
-              <div className="bg-brand-red text-white py-1.5 px-3 rounded-full text-xs font-black uppercase inline-block mx-auto tracking-wider shadow-xs animate-pulse">
-                Oferta especial somente nesta página
-              </div>
+            <div className="space-y-6">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-amber-50 border border-amber-200 text-amber-700 text-xs font-bold rounded-full uppercase tracking-wider animate-pulse">
+                🔥 Desconto por Tempo Limitado
+              </span>
 
               {/* Price layout */}
-              <div className="space-y-1">
-                <span className="text-xs text-slate-500 font-extrabold block">De: {pricing.currency} {pricing.originalPrice.toFixed(2).replace('.', ',')}</span>
-                <span className="text-xs text-slate-400 block font-medium">Por apenas</span>
-                <div className="space-y-0.5">
-                  <span className="text-4xl sm:text-5xl font-black text-brand-blue">
-                    {pricing.currency} {pricing.promoPrice.toFixed(2).replace('.', ',')}
+              <div className="space-y-2">
+                <span className="text-xs text-slate-400 font-semibold block line-through">De: {pricing.currency} {pricing.originalPrice.toFixed(2).replace('.', ',')}</span>
+                <span className="text-xs text-slate-500 font-bold uppercase tracking-wider block">Por apenas</span>
+                <div className="py-2">
+                  <span className="text-5xl font-black text-slate-900 tracking-tight">
+                    {pricing.currency} <span className="text-emerald-600">{pricing.promoPrice.toFixed(2).replace('.', ',')}</span>
                   </span>
                 </div>
-                <span className="text-[10px] text-brand-green font-extrabold block uppercase tracking-wide">
+                <div className="bg-emerald-50 text-emerald-800 py-1.5 px-3 rounded-lg text-xs font-bold inline-block border border-emerald-100">
                   Economia Real de R$ {(pricing.originalPrice - pricing.promoPrice).toFixed(2).replace('.', ',')}
-                </span>
+                </div>
               </div>
             </div>
 
             {/* CTA action or success display */}
-            <div className="space-y-3">
+            <div className="space-y-4">
               <a
                 href="https://pay.wiapy.com/9rccEpBlqd"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-4 bg-brand-green hover:bg-brand-green/95 text-white font-black text-sm uppercase rounded-2xl shadow-lg transition-transform duration-200 transform hover:-translate-y-0.5 active:translate-y-0 tracking-wider cursor-pointer flex items-center justify-center gap-1.5 text-center block no-underline"
+                className="w-full py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm tracking-wide uppercase rounded-xl shadow-lg transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0 text-center block no-underline flex items-center justify-center gap-2 cursor-pointer"
               >
-                <Sparkles className="w-4 h-4 text-brand-yellow fill-brand-yellow animate-bounce" />
-                SIM, QUERO ADICIONAR ESSE PACK
+                <Sparkles className="w-4 h-4 text-emerald-300 fill-emerald-300" />
+                ADICIONAR AO MEU PEDIDO AGORA
               </a>
 
-              <span className="text-[11px] text-slate-500 block font-semibold">
-                Acesso imediato após a compra.
+              <span className="text-[11px] text-slate-400 block font-medium">
+                Compra processada com segurança. Acesso imediato.
               </span>
             </div>
 
             {/* Mini Trust Badges */}
-            <div className="pt-4 border-t border-slate-200/50 flex justify-center gap-4 text-[10px] uppercase text-slate-400 font-bold">
-              <span>🔒 SSL Seguro</span>
-              <span>⚡ Entrega Vapt-Vupt</span>
+            <div className="pt-6 border-t border-slate-150/60 flex justify-center gap-4 text-[10px] text-slate-400 font-semibold tracking-wider uppercase">
+              <span className="flex items-center gap-1">🛡️ SSL Seguro</span>
+              <span className="flex items-center gap-1">⚡ download imediato</span>
             </div>
 
           </div>
@@ -175,65 +179,65 @@ export default function OfferSection({
 
       </div>
 
-      {/* Interactive Mock Checkout Drawer / Overlay */}
+      {/* Interactive Mock Checkout Drawer / Overlay (Beautiful Modern Sleek Model) */}
       {showCheckout && (
-        <div className="fixed inset-0 bg-black/75 backdrop-blur-xs flex items-center justify-center p-4 z-50">
+        <div className="fixed inset-0 bg-slate-900/40 backdrop-blur-sm flex items-center justify-center p-4 z-50 transition-all duration-300">
           <motion.div 
-            initial={{ scale: 0.95, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            className="bg-white border-4 border-brand-blue rounded-3xl max-w-md w-full p-6 md:p-8 space-y-6 shadow-2xl relative"
+            initial={{ scale: 0.98, opacity: 0, y: 10 }}
+            animate={{ scale: 1, opacity: 1, y: 0 }}
+            className="bg-white rounded-2xl max-w-md w-full p-8 space-y-6 shadow-2xl relative border border-slate-100"
           >
             <button 
               onClick={() => setShowCheckout(false)}
-              className="absolute top-4 right-4 text-slate-400 hover:text-slate-700 cursor-pointer text-sm font-bold"
+              className="absolute top-5 right-5 text-slate-400 hover:text-slate-600 transition-colors cursor-pointer text-lg p-1.5 rounded-full hover:bg-slate-50"
             >
               ✕
             </button>
 
-            {/* Logo */}
-            <div className="text-center space-y-1">
-              <span className="text-[10px] uppercase font-black text-brand-blue bg-brand-yellow border border-brand-blue px-2.5 py-0.5 rounded-full inline-block">
-                Provador de Compra
+            {/* Header */}
+            <div className="text-center space-y-2">
+              <span className="text-[10px] uppercase font-bold tracking-widest text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full inline-block border border-emerald-100">
+                PAGAMENTO SEGURO
               </span>
-              <h3 className="text-lg font-black text-brand-blue">Finalizar Compra Simulado</h3>
-              <p className="text-xs text-slate-500">
-                Qualquer dado preenchido é válido. Ao comprar, você simula o download dos PDFs prontos na página.
+              <h3 className="text-xl font-extrabold text-slate-900">Finalizar Compra</h3>
+              <p className="text-xs text-slate-550 max-w-xs mx-auto">
+                Insira as informações de entrega abaixo para simular o recebimento do combo de PDF. No teste, nenhum valor real é cobrado.
               </p>
             </div>
 
             {!isSuccess ? (
-              <form onSubmit={handleSimulatedCheckout} className="space-y-4">
-                <div className="space-y-1">
-                  <label className="text-[11px] font-black text-slate-700 block uppercase">Nome Completo do Professor(a):</label>
+              <form onSubmit={handleSimulatedCheckout} className="space-y-5">
+                <div className="space-y-1.5">
+                  <label className="text-[11px] font-bold text-slate-600 block uppercase tracking-wide">Nome Completo do Professor(a):</label>
                   <input
                     type="text"
                     required
-                    placeholder="Ex: Maria das Dores"
+                    placeholder="Ex: Ana Maria Silva"
                     value={buyerName}
                     onChange={(e) => setBuyerName(e.target.value)}
-                    className="w-full p-2.5 border-2 border-slate-200 rounded-xl text-xs text-slate-800 font-semibold focus:outline-brand-blue"
+                    className="w-full p-3 border border-slate-200 rounded-xl text-xs text-slate-800 font-medium focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 outline-none transition-all"
                   />
                 </div>
 
-                <div className="space-y-1">
-                  <label className="text-[11px] font-black text-slate-700 block uppercase">E-mail para Receber os PDFs:</label>
+                <div className="space-y-1.5">
+                  <label className="text-[11px] font-bold text-slate-600 block uppercase tracking-wide">E-mail para Receber os PDFs:</label>
                   <input
                     type="email"
                     required
                     placeholder="Ex: professora@escola.com"
                     value={buyerEmail}
                     onChange={(e) => setBuyerEmail(e.target.value)}
-                    className="w-full p-2.5 border-2 border-slate-200 rounded-xl text-xs text-slate-800 font-semibold focus:outline-brand-blue"
+                    className="w-full p-3 border border-slate-200 rounded-xl text-xs text-slate-800 font-medium focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 outline-none transition-all"
                   />
                 </div>
 
                 {/* Simulated Pricing recap */}
-                <div className="bg-brand-beige/50 p-3 rounded-xl border border-slate-200 flex justify-between items-center text-xs">
+                <div className="bg-slate-50 p-4 rounded-xl border border-slate-100 flex justify-between items-center text-xs">
                   <div>
-                    <span className="font-bold text-slate-700 block">Pack Copa + São João</span>
-                    <span className="text-[10px] text-brand-green font-bold">🏷️ Cupom de 65% Ativado</span>
+                    <span className="font-bold text-slate-800 block">Pack Copa + São João</span>
+                    <span className="text-[10px] text-emerald-600 font-bold flex items-center gap-1">🏷️ Oferta Especial Ativada</span>
                   </div>
-                  <span className="text-base font-extrabold text-brand-blue">
+                  <span className="text-lg font-black text-slate-900">
                     R$ {pricing.promoPrice.toFixed(2).replace('.', ',')}
                   </span>
                 </div>
@@ -241,11 +245,11 @@ export default function OfferSection({
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-3 bg-brand-green hover:bg-brand-green/95 text-white font-black text-xs uppercase rounded-xl shadow-md transition-all cursor-pointer flex justify-center items-center gap-2"
+                  className="w-full py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow-md transition-all cursor-pointer flex justify-center items-center gap-2"
                 >
                   {isSubmitting ? (
                     <>
-                      <Send className="w-4 h-4 animate-bounce" /> Processando Pagamento...
+                      <Send className="w-4 h-4 animate-bounce" /> Liberando Material...
                     </>
                   ) : (
                     <>
@@ -255,26 +259,26 @@ export default function OfferSection({
                 </button>
               </form>
             ) : (
-              <div className="text-center space-y-4 py-4 animate-pulse">
-                <div className="w-16 h-16 bg-brand-green/10 text-brand-green rounded-full flex items-center justify-center mx-auto">
-                  <Award className="w-10 h-10 text-brand-green" />
+              <div className="text-center space-y-5 py-4">
+                <div className="w-14 h-14 bg-emerald-50 text-emerald-650 rounded-full flex items-center justify-center mx-auto">
+                  <Award className="w-8 h-8 text-emerald-650 animate-bounce" />
                 </div>
-                <div className="space-y-1">
-                  <h4 className="text-base font-extrabold text-brand-blue">Parabéns, Professor(a) {buyerName}!</h4>
-                  <p className="text-xs text-slate-600">
-                    O pagamento simulado foi confirmado! Um e-mail com o recibo de compra foi preparado para <span className="font-bold">{buyerEmail}</span>.
+                <div className="space-y-2">
+                  <h4 className="text-lg font-extrabold text-slate-950">Acesso Liberado!</h4>
+                  <p className="text-xs text-slate-600 leading-relaxed max-w-xs mx-auto">
+                    O pagamento simulado foi confirmado. Enviamos o recibo e os arquivos para o e-mail <span className="font-bold text-slate-800">{buyerEmail}</span>.
                   </p>
                 </div>
                 
-                <div className="bg-brand-green/15 text-brand-green p-3 rounded-lg border border-brand-green/30 text-xs">
-                  🎉 O Pack foi adicionado com sucesso no fluxo! Agora você pode descer até o rodapé ou usar os botões de download rápido.
+                <div className="bg-emerald-50 text-emerald-800 p-3 rounded-xl border border-emerald-100 text-xs text-left leading-relaxed font-medium">
+                  🎉 O material completo de <strong>Copa do Mundo e São João</strong> foi ativado. Você já pode usar no fluxo de aulas!
                 </div>
 
                 <button
                   onClick={() => setShowCheckout(false)}
-                  className="w-full py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-lg text-xs cursor-pointer"
+                  className="w-full py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl text-xs cursor-pointer transition-colors"
                 >
-                  Voltar à Página Principal
+                  Continuar Navegando
                 </button>
               </div>
             )}
