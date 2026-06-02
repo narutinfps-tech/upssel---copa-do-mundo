@@ -1,0 +1,6 @@
+{
+  "name": "Página de Upsell - Atividades de Inglês",
+  "description": "Página de upsell interativa para venda do Pack Atividades Temáticas de Inglês (Copa do Mundo e São João) com prévias de atividades, depoimentos, simulação de compra e design escolar otimizado.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

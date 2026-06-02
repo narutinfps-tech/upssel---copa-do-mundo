@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Poppins", "Inter", sans-serif;
+  
+  --color-brand-blue: #0B2E6D;
+  --color-brand-green: #1E9B4B;
+  --color-brand-red: #E6392E;
+  --color-brand-yellow: #FFC928;
+  --color-brand-beige: #FFF9EF;
+}
+
+/* Custom visual style for a playful scholastic feel */
+body {
+  background-color: #FFF9EF;
+  font-family: var(--font-sans);
+  color: #1F1F1F;
+}
+
+@layer utilities {
+  .dashed-border {
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%2308cfff6d&lt;rect width='100%25' height='100%25' fill='none' rx='16' ry='16' stroke='%230B2E6D' stroke-width='3' stroke-dasharray='10%2c 10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    border-radius: 16px;
+  }
+}
