@@ -72,6 +72,31 @@ export default function HeroSection({
             Ideal para professores que querem aulas mais divertidas, visuais e fáceis de preparar, sem perder horas criando materiais do zero.
           </motion.p>
 
+          {/* New Requested Mockup below the subheadline */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.35 }}
+            className="w-full max-w-lg md:max-w-xl mx-auto rounded-3xl overflow-hidden border-4 border-brand-blue shadow-xl bg-white p-2.5 relative rotate-1 hover:rotate-0 transition-all duration-500 my-4"
+          >
+            {/* Playful badge on top-right */}
+            <div className="absolute -top-3 -right-3 bg-brand-yellow font-black text-brand-blue text-[10px] sm:text-xs uppercase px-3 py-1.5 rounded-full border-2 border-brand-blue shadow-md z-10 flex items-center gap-1 leading-none">
+              🔥 Combo Completo 2 em 1
+            </div>
+            {/* Note pages side margins effect */}
+            <div className="absolute left-4.5 top-0 bottom-0 w-[2px] bg-red-400/80" />
+            
+            <div className="pl-6 pt-2 pr-2 pb-2 bg-[linear-gradient(#f0f7ff_1px,transparent_1px)] [background-size:100%_24px] rounded-2xl overflow-hidden">
+              <img
+                src="https://i.ibb.co/4nnqCpzv/b4df2a1b-90c2-4ea2-bc1e-8a5c4cbc6b70.png"
+                alt="Combo Atividades Temáticas — Copa do Mundo & São João"
+                referrerPolicy="no-referrer"
+                loading="lazy"
+                className="w-full h-auto rounded-xl shadow-xs border border-slate-200"
+              />
+            </div>
+          </motion.div>
+
           {/* Key Quick benefits badges */}
           <motion.div 
             initial={{ opacity: 0, y: 15 }}
